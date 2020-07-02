@@ -1,0 +1,790 @@
+{
+  "release": {
+    "current": [
+      {
+        "$variant": "android",
+        "$value": "6.1.0(13)"
+      },
+      {
+        "$variant": "androidtv",
+        "$value": "6.1.4(4)"
+      },
+      {
+        "$variant": "ios",
+        "$value": "6.1.0(3)"
+      }
+    ],
+    "required": [
+      {
+        "$variant": "android",
+        "$value": "6.1.0(0)"
+      },
+      {
+        "$variant": "androidtv",
+        "$value": "6.1.4(4)"
+      },
+      {
+        "$variant": "ios",
+        "$value": "6.1.0(0)"
+      }
+    ],
+    "store_link": [
+      {
+        "$variant": "android",
+        "$value": "https://play.google.com/store/apps/details?id="
+      },
+      {
+        "$variant": "androidtv",
+        "$value": "https://play.google.com/store/apps/details?id="
+      },
+      {
+        "$variant": "ios",
+        "$value": "https://itunes.apple.com/fr/app/apple-store/id"
+      }
+    ]
+  },
+  "language":{
+        "texts":[
+            {
+                "$value":"https://trung-testing.s3-eu-west-1.amazonaws.com/lang/lang-english.json"
+            },
+            {
+                "$locale":"es",
+                "$givenName": "Espanish",
+                "$value":"https://trung-testing.s3-eu-west-1.amazonaws.com/lang/lang-spanish.json"
+            },
+            {
+                "$locale":"en",
+                "$givenName": "English",
+                "$value":"https://trung-testing.s3-eu-west-1.amazonaws.com/lang/lang-english.json"
+            }
+        ],
+    "metadatas": [
+      {
+        "$value": "en"
+      },
+      {
+        "$locale": "es",
+        "$value": "es"
+      },
+      {
+        "$locale": "en",
+        "$value": "en"
+      }
+    ]
+  },
+  "modules": {
+    "home": {
+      "enabled": true
+    },
+    "live": {
+      "enabled": true
+    },
+    "epg": {
+      "enabled": true,
+      "duration": 9,
+      "nbPastDays": 2
+    },
+    "vod": {
+      "enabled": true,
+      "home_enabled": false
+    },
+    "startover": {
+      "enabled": true
+    },
+    "catchup": {
+      "enabled": true,
+      "home_enabled": true
+    },
+    "ppv": {
+      "enabled": false
+    },
+    "facebook_login": {
+      "enabled": false
+    },
+    "my_library": {
+      "offers_enabled": false
+    },
+    "search": {
+      "enabled": [
+        {
+          "$value": true
+        }
+      ]
+    },
+    "selfcare": {
+      "enabled": true
+    },
+    "my_videos": {
+      "enabled": true
+    },
+    "recommendations": {
+      "enabled": true
+    },
+    "downloads": {
+      "enabled": false,
+      "quality": {
+        "LD": false,
+        "SD": false,
+        "HD": false,
+        "FHD": false,
+        "2K": false,
+        "4K": false,
+        "8K": false,
+        "16K": false
+      }
+    },
+    "detail_related": {
+      "enabled": true,
+      "available_in": false,
+      "compatible_devices": true
+    },
+    "purchase": {
+      "enabled": [
+        {
+          "$value": true
+        },
+        {
+          "$variant": "web",
+          "$value": false
+        },
+        {
+          "$variant": "ios",
+          "$value": false
+        },
+        {
+          "$variant": "android",
+          "$value": false
+        }
+      ],
+      "require_purchase_pin": [
+        {
+          "$value": false
+        },
+        {
+          "$variant": "web",
+          "$value": false
+        },
+        {
+          "$variant": "ios",
+          "$value": false
+        },
+        {
+          "$variant": "android",
+          "$value": false
+        }
+      ],
+      "payment_methods": [
+        {
+          "$variant": "web",
+          "$value": [
+            {
+              "name": "redDot",
+              "storeId": "red_dot",
+              "stores_url": "https://www.reddotnetwork.com/store-locator",
+              "page_url": "https://www.reddotnetwork.com/red-dot-pay-consumer"
+            },
+            {
+              "storeId": "5bb"
+            }
+          ]
+        },
+        {
+          "$variant": "android",
+          "$value": [
+            {
+              "name": "redDot",
+              "storeId": "red_dot",
+              "stores_url": "https://www.reddotnetwork.com/store-locator",
+              "page_url": "https://www.reddotnetwork.com/red-dot-pay-consumer"
+            },
+            {
+              "storeId": "5bb"
+            }
+          ]
+        },
+        {
+          "$variant": "ios",
+          "$value": [
+            {
+              "name": "redDot",
+              "storeId": "red_dot",
+              "stores_url": "https://www.reddotnetwork.com/store-locator",
+              "page_url": "https://www.reddotnetwork.com/red-dot-pay-consumer"
+            },
+            {
+              "storeId": "5bb"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "enabled": false,
+      "twitter_hashtags": [
+        {
+          "$value": [
+            "#toto",
+            "#titi",
+            "#tata"
+          ]
+        }
+      ]
+    },
+    "user": {
+      "enabled": true,
+      "reminder_enabled": [
+        {
+          "$value": true
+        },
+        {
+          "$variant": "ios",
+          "$value": true
+        }
+      ],
+      "subscription_enabled": true,
+      "transaction_enabled": true,
+      "whishlist_enabled": true,
+      "resend_verification_email": false,
+      "forgot_password_enabled": false,
+      "account_creation": false
+    },
+    "settings": [
+      {
+        "$variant": "androidtv",
+        "$value": [
+          {
+            "name": "settings_change_user",
+            "enabled": true,
+            "deeplink": "/settings/change_user",
+            "user_logged": true
+          },
+          {
+            "name": "settings_change_pwd",
+            "enabled": true,
+            "deeplink": "/settings/change_pwd",
+            "user_logged": true
+          },
+          {
+            "name": "settings_change_language",
+            "enabled": true,
+            "deeplink": "/settings/change_language"
+          },
+          {
+            "name": "settings_parental_control",
+            "enabled": true,
+            "deeplink": "/settings/parental_control",
+            "user_logged": true
+          },
+          {
+            "name": "settings_device_management",
+            "enabled": true,
+            "deeplink": "/settings/device_management",
+            "user_logged": true
+          },
+          {
+            "name": "settings_optin_optout",
+            "enabled": true,
+            "deeplink": "/settings/optin_optout",
+            "user_logged": true
+          },
+          {
+            "name": "settings_term_and_condition",
+            "enabled": true,
+            "deeplink": "https://appnexle-ng-test.tvaas.com/apps/common/terms-en.html",
+            "user_logged": true
+          },
+          {
+            "name": "settings_contact",
+            "enabled": true,
+            "deeplink": "https://appnexle-ng-test.tvaas.com/apps/common/gbt_au.html",
+            "user_logged": true
+          },
+          {
+            "name": "settings_about",
+            "enabled": true,
+            "deeplink": "https://appnexle-ng-test.tvaas.com/apps/common/gbt_au.html",
+            "user_logged": true
+          }
+        ]
+      }
+    ]
+  },
+  "landing_deeplink": [
+    {
+      "$value": "/home"
+    }
+  ],
+  "backend": {
+    "rightv": "https://appnexle-ng-test.tvaas.com/RTEFacade",
+    "compass": "https://appnexle-ng-test.tvaas.com/compass",
+    "compass_search": "https://appnexle-ng-test.tvaas.com/search/compass",
+    "drm_licence": "https://appnexle-ng-test.tvaas.com/RTEFacade/drm",
+    "drm_licence_PR": "https://appnexle-ng-test.tvaas.com/RTEFacade/drm",
+    "drm_licence_WV": "https://appnexle-ng-test.tvaas.com/RTEFacade/widevinedrm",
+    "drm_wv_certificate": "https://cps.purpledrm.com/wv_certificate/cert_license_widevine_com.bin",
+    "personalization": "https://persopp.purpledrm.com/PersoServerNoCheck/Personalization"
+  },
+  "homes": {
+    "home": [
+      {
+        "$value": [
+          {
+            "name": "BLEND_EDITORIAL_PICKS",
+            "type": "paged",
+            "params": {
+              "type": "",
+              "url": "https://appnexle-ng-test.tvaas.com/compass/GetVideoRecommendationList",
+              "content_type": "",
+              "blend": "Editorial_Picks_Home",
+              "categories": "Movies,TV Shows,SVOD Services,VOD Packages",
+              "max_results": "5"
+            }
+          },
+          {
+            "name": "BLEND_RECOMMENDED",
+            "type": "poster",
+            "params": {
+              "type": "",
+              "url": "https://appnexle-ng-test.tvaas.com/compass/GetVideoRecommendationList",
+              "content_type": "",
+              "blend": "Recommended_For_You _Home",
+              "categories": "Movies,TV Shows,SVOD Services,VOD Packages",
+              "max_results": "10"
+            }
+          },
+          {
+            "name": "BLEND_LATEST",
+            "type": "still",
+            "params": {
+              "type": "",
+              "url": "https://appnexle-ng-test.tvaas.com/compass/GetVideoRecommendationList",
+              "content_type": "Season",
+              "blend": "Latest_and_Greatest_Home",
+              "categories": "Movies,TV Shows,SVOD Services,VOD Packages",
+              "max_results": "10"
+            }
+          },
+          {
+            "name": "BLEND_LIVE",
+            "type": "still",
+            "params": {
+              "type": "all",
+              "url": "https://appnexle-ng-test.tvaas.com/compass/GetLiveRecommendationList",
+              "content_type": "",
+              "blend": "live",
+              "categories": "",
+              "max_results": "10"
+            }
+          },
+          {
+            "name": "BLEND_VIEWER_CHOICE",
+            "type": "still",
+            "params": {
+              "type": "",
+              "url": "https://appnexle-ng-test.tvaas.com/compass/GetVideoRecommendationList",
+              "content_type": "",
+              "blend": "Viewers_Choice_Home",
+              "categories": "Movies,TV Shows,SVOD Services,VOD Packages",
+              "max_results": "10"
+            }
+          },
+          {
+            "name": "BLEND_TREND",
+            "type": "still",
+            "params": {
+              "type": "",
+              "url": "https://appnexle-ng-test.tvaas.com/compass/GetVideoRecommendationList",
+              "content_type": "Season",
+              "blend": "Trending_Series_Home",
+              "categories": "Movies,TV Shows,SVOD Services,VOD Packages",
+              "max_results": "10"
+            }
+          },
+          {
+            "name": "BLEND_POPULAR",
+            "type": "still",
+            "params": {
+              "type": "",
+              "url": "https://appnexle-ng-test.tvaas.com/compass/GetVideoRecommendationList",
+              "content_type": "",
+              "blend": "Popular_Movies_Home",
+              "categories": "Movies,TV Shows,SVOD Services,VOD Packages",
+              "max_results": "10"
+            }
+          }
+        ]
+      }
+    ],
+    "vod": {
+      "TVOD Services": [
+        {
+          "$value": [
+            {
+              "type": "paged",
+              "params": {
+                "type": "",
+                "url": "https://appnexle-ng-test.tvaas.com/compass/GetVideoRecommendationList",
+                "content_type": "",
+                "blend": "promotions",
+                "categories": "Movies,TV Shows",
+                "max_results": "5"
+              }
+            },
+            {
+              "name": "home_movies",
+              "type": "poster",
+              "params": {
+                "type": "",
+                "url": "https://appnexle-ng-test.tvaas.com/compass/GetVideoRecommendationList",
+                "content_type": "",
+                "blend": "movies",
+                "categories": "Movies",
+                "max_results": "10"
+              }
+            },
+            {
+              "name": "home_tvshows",
+              "type": "poster",
+              "params": {
+                "type": "",
+                "url": "https://appnexle-ng-test.tvaas.com/compass/GetVideoRecommendationList",
+                "content_type": "Season",
+                "blend": "series",
+                "categories": "TV Shows",
+                "max_results": "10"
+              }
+            }
+          ]
+        }
+      ],
+      "SVOD Services": [
+        {
+          "$value": [
+            {
+              "type": "paged",
+              "params": {
+                "type": "",
+                "url": "https://appnexle-ng-test.tvaas.com/compass/GetVideoRecommendationList",
+                "content_type": "",
+                "blend": "promotions",
+                "categories": "SVOD Services",
+                "max_results": "5"
+              }
+            },
+            {
+              "name": "home_movies",
+              "type": "poster",
+              "params": {
+                "type": "",
+                "url": "https://appnexle-ng-test.tvaas.com/compass/GetVideoRecommendationList",
+                "content_type": "",
+                "blend": "movies",
+                "categories": "SVOD Services",
+                "max_results": "10"
+              }
+            },
+            {
+              "name": "home_tvshows",
+              "type": "still",
+              "params": {
+                "type": "",
+                "url": "https://appnexle-ng-test.tvaas.com/compass/GetVideoRecommendationList",
+                "content_type": "Season",
+                "blend": "series",
+                "categories": "SVOD Services",
+                "max_results": "10"
+              }
+            }
+          ]
+        }
+      ],
+      "VOD Packages": [
+        {
+          "$value": [
+            {
+              "type": "paged",
+              "params": {
+                "type": "",
+                "url": "https://appnexle-ng-test.tvaas.com/compass/GetVideoRecommendationList",
+                "content_type": "",
+                "blend": "promotions",
+                "categories": "VOD Packages",
+                "max_results": "5"
+              }
+            },
+            {
+              "name": "home_movies",
+              "type": "poster",
+              "params": {
+                "type": "",
+                "url": "https://appnexle-ng-test.tvaas.com/compass/GetVideoRecommendationList",
+                "content_type": "",
+                "blend": "movies",
+                "categories": "VOD Packages",
+                "max_results": "10"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "left_menu": [
+    {
+      "$variant": "android",
+      "$value": [
+        {
+          "name": "menu_home",
+          "deeplink": "/home"
+        },
+        {
+          "name": "menu_svod",
+          "deeplink": "/vod/SVOD%20Services"
+        },
+        {
+          "name": "menu_vodpackages",
+          "deeplink": "/vod/VOD%20Packages"
+        },
+        {
+          "name": "menu_tvod",
+          "deeplink": "/vod/TVOD%20Services",
+          "user_logged": true
+        },
+        {
+          "name": "menu_sep_user",
+          "separator": true,
+          "user_logged": true
+        },
+        {
+          "name": "menu_live",
+          "deeplink": "/live"
+        },
+        {
+          "name": "menu_epg",
+          "deeplink": "/epg",
+          "user_logged": true,
+          "menu_icon": "ic_menu_tvguide"
+        },
+        {
+          "name": "menu_mylibrary",
+          "deeplink": "/profile/myLibrary",
+          "user_logged": true
+        },
+        {
+          "name": "menu_mydownloads",
+          "deeplink": "/profile/myDownloads",
+          "user_logged": true
+        },
+        {
+          "name": "menu_settings",
+          "deeplink": "/profile/mySetting",
+          "user_logged": true
+        },
+        {
+          "name": "menu_myOffers",
+          "deeplink": "/offers"
+        },
+        {
+          "name": "menu_sep_user",
+          "separator": true,
+          "user_logged": true
+        },
+        {
+          "name": "menu_contact",
+          "deeplink": "http://103.224.118.222"
+        },
+        {
+          "name": "menu_terms",
+          "deeplink": "http://103.224.118.222"
+        },
+        {
+          "name": "menu_faq",
+          "deeplink": "http://103.224.118.222"
+        },
+        {
+          "name": "menu_about",
+          "deeplink": "http://103.224.118.222"
+        }
+      ]
+    },
+    {
+      "$variant": "ios",
+      "$value": [
+        {
+          "name": "menu_home",
+          "deeplink": "/home"
+        },
+        {
+          "name": "menu_svod",
+          "deeplink": "/vod/SVOD%20Services"
+        },
+        {
+          "name": "menu_tvod",
+          "deeplink": "/vod/TVOD%20Services"
+        },
+        {
+          "name": "menu_vodpackages",
+          "deeplink": "/vod/VOD%20Packages"
+        },
+        {
+          "name": "menu_mylibrary",
+          "deeplink": "/profile/myLibrary",
+          "user_logged": true
+        },
+        {
+          "name": "menu_mydownloads",
+          "deeplink": "/profile/myDownloads",
+          "user_logged": true
+        },
+        {
+          "name": "menu_settings",
+          "deeplink": "/profile/mySetting",
+          "user_logged": true
+        },
+        {
+          "name": "menu_language",
+          "deeplink": "/lang"
+        },
+        {
+          "name": "menu_contact",
+          "deeplink": "mailto:services@lalakyi.com?Subject=Support%20request"
+        },
+        {
+          "name": "menu_terms",
+          "deeplink": "https://appnexle-ng-test.tvaas.com/apps/common/terms-en.html"
+        },
+        {
+          "name": "menu_about",
+          "deeplink": "https://appnexle-ng-test.tvaas.com/apps/common/gbt_au.html"
+        }
+      ]
+    },
+    {
+      "$variant": "web",
+      "$value": [
+        {
+          "name": "menu_home",
+          "deeplink": "/home"
+        },
+        {
+          "name": "menu_svod",
+          "deeplink": "/vod/SVOD%20Services"
+        },
+        {
+          "name": "menu_tvod",
+          "deeplink": "/vod/TVOD%20Services"
+        },
+        {
+          "name": "menu_vodpackages",
+          "deeplink": "/vod/VOD%20Packages"
+        }
+      ]
+    },
+    {
+      "$variant": "androidtv",
+      "$value":[
+                {
+                    "name":"menu_home",
+                    "deeplink":"/home"
+                },
+                {
+                    "name":"menu_svod",
+                    "deeplink":"/vod/SVOD%20Services"
+                },
+                {
+                    "name":"menu_tvod",
+                    "deeplink":"/vod/TVOD%20Services"
+                },
+                {
+                    "name":"menu_vodpackages",
+                    "deeplink":"/vod/VOD%20Packages"
+                },
+                {   
+                    "name": "menu_mydownloads",
+                    "deeplink": "/profile/myDownloads",
+                    "user_logged": true
+                },
+                {
+                    "name": "menu_myrecordings",
+                    "deeplink": "/profile/myRecordings",
+                    "user_logged": true
+                },
+                {
+                    "name":"menu_live",
+                    "deeplink":"/live"
+                },
+                {
+                    "name":"menu_epg",
+                    "deeplink":"/epg"
+                },
+                {
+                    "name":"menu_mylibrary",
+                    "deeplink":"/profile/myLibrary",
+                    "user_logged":true
+                },
+                {
+                    "name":"menu_settings",
+                    "deeplink":"/profile/mySetting"
+                },
+                {
+                  "name": "menu_logout",
+                  "deeplink": "/logout",
+                  "user_logged": true
+                }
+            ]
+    }
+  ],
+  "right_menu": [
+    {
+      "$value": []
+    },
+    {
+      "$variant": "web",
+      "$value": [
+        {
+          "name": "menu_change_profile",
+          "deeplink": "/profile/change",
+          "user_logged": true
+        },
+        {
+          "name": "menu_mylibrary",
+          "deeplink": "/profile/myLibrary",
+          "user_logged": true
+        },
+        {
+          "name": "menu_settings",
+          "deeplink": "/profile/settings",
+          "user_logged": true
+        },
+        {
+          "name": "menu_logout",
+          "deeplink": "/logout",
+          "user_logged": true
+        }
+      ]
+    }
+  ],
+  "footer_menu": [
+    {
+      "$value": []
+    },
+    {
+      "$variant": "web",
+      "$value": [
+        {
+          "name": "menu_terms",
+          "deeplink": "https://appnexle-ng-test.tvaas.com/apps/common/terms-en.html"
+        },
+        {
+          "name": "menu_about",
+          "deeplink": "https://appnexle-ng-test.tvaas.com/apps/common/gbt_au.html"
+        },
+        {
+          "name": "menu_contact",
+          "deeplink": "mailto:development@nexlesoft.com?Subject=Support%20request"
+        }
+      ]
+    }
+  ]
+}
